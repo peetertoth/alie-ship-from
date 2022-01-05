@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AliExpress / set ship from country
 // @namespace    peetftp.ddns.net
-// @version      0.1
+// @version      0.2
 // @description  Creates a 'Ship from' selector to the AliExpress product search page (below the 'Sort by' row)
 // @author       Peter Toth
 // @match        https://www.aliexpress.com/wholesale*
@@ -61,7 +61,7 @@
     const addShipFromOption = function (elementWrapper, countryCode) {
         const shipFromSpan = document.createElement('span');
         shipFromSpan.onclick = function () { console.log('click'); window.location.href = generateURLWithCountryCode(countryCode); };
-        shipFromSpan.innerText = `Ship from ${countryCode}`;
+        shipFromSpan.innerText = ` ${countryCode} `;
 
         const isActive = window.location.href.indexOf(`${queryParamName}=${countryCode}`) > -1;
         shipFromSpan.className = 'sort-item' + (isActive ? ' active' : '');
