@@ -7,8 +7,8 @@
 // @match        https://www.aliexpress.com/wholesale*
 // @icon         https://www.google.com/s2/favicons?domain=aliexpress.com
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/peetertoth/alie-ship-from/main/alie-ship-from.js
-// @downloadURL  https://raw.githubusercontent.com/peetertoth/alie-ship-from/main/alie-ship-from.js
+// @updateURL    https://raw.githubusercontent.com/peetertoth/alie-ship-from/main/alie-ship-from.user.js
+// @downloadURL  https://raw.githubusercontent.com/peetertoth/alie-ship-from/main/alie-ship-from.user.js
 // ==/UserScript==
 
 (function() {
